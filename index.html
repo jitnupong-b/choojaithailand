@@ -83,49 +83,60 @@
                     <div class="panel-body">
                         <div class="col-md-9">
                             <table class="table table-striped text-sm">
-                                <tr>
-                                    <td>โครงการที่อยู่ระหว่างค้ำประกันสัญญา</td>
-                                    <td>เลขที่สัญญา</td>
-                                    <td>ความยาว<br />(กม.)</td>
-                                    <td>ผู้รับจ้าง</td>
-                                    <td>จำนวนเงิน<br />(ล้านบาท)</td>
-                                    <td colspan="3">วันแล้วเสร็จ<br />(ตรวจรับงาน)</td>
-                                    <td colspan="3">สิ้นสุดค้ำประกันสัญญา</td>
-                                    <td colspan="2">จำนวนวันคงเหลือ</td>
-                                    <td>ช่วงดำเนินงาน</td>
-                                    <td>ผู้ควบคุมงาน</td>
-                                </tr>
-                                <tr>
-                                    <td>ไฟฟ้าแสงสว่าง</td>
-                                    <td>11/2560</td>
-                                    <td>1 แท่ง</td>
-                                    <td>บ.พงศกรกลการ จำกัด</td>
-                                    <td>4.122</td>
-                                    <td>31</td>
-                                    <td>มี.ค.</td>
-                                    <td>60</td>
-                                    <td>31</td>
-                                    <td>มี.ค.</td>
-                                    <td>62</td>
-                                    <td>166</td>
-                                    <td>วัน</td>
-                                    <td>3+200-5+300</td>
-                                    <td>นายอุปัชฌาย์ ทวีมนูญ</td>
-                                </tr>
-                                <tr>
-                                    <td colspan="15">รวมระยะทางที่อยู่ระหว่างค้ำประกันสัญญา
-                                        (เฉพาะกิจกรรมที่ดำเนินการบนผิว 0.00 กม.</td>
-                                </tr>
+                                <thead>
+                                    <tr>
+                                        <td>โครงการที่อยู่ระหว่างค้ำประกันสัญญา</td>
+                                        <td>เลขที่สัญญา</td>
+                                        <td>ความยาว<br />(กม.)</td>
+                                        <td>ผู้รับจ้าง</td>
+                                        <td>จำนวนเงิน<br />(ล้านบาท)</td>
+                                        <td colspan="3">วันแล้วเสร็จ<br />(ตรวจรับงาน)</td>
+                                        <td colspan="3">สิ้นสุดค้ำประกันสัญญา</td>
+                                        <td colspan="2">จำนวนวันคงเหลือ</td>
+                                        <td>ช่วงดำเนินงาน</td>
+                                        <td>ผู้ควบคุมงาน</td>
+                                        <td>ลบ</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ไฟฟ้าแสงสว่าง</td>
+                                        <td>11/2560</td>
+                                        <td>1 แท่ง</td>
+                                        <td>บ.พงศกรกลการ จำกัด</td>
+                                        <td>4.122</td>
+                                        <td>31</td>
+                                        <td>มี.ค.</td>
+                                        <td>60</td>
+                                        <td>31</td>
+                                        <td>มี.ค.</td>
+                                        <td>62</td>
+                                        <td>166</td>
+                                        <td>วัน</td>
+                                        <td>3+200-5+300</td>
+                                        <td>นายอุปัชฌาย์ ทวีมนูญ</td>
+                                        <td><button class="btn btn-danger" onclick="confirm_delete();"><span class="glyphicon glyphicon-remove-circle"></span></button></td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="16" class="text-right">
+                                            <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                                เพิ่มข้อมูลโครงการ
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="16">รวมระยะทางที่อยู่ระหว่างค้ำประกันสัญญา
+                                            (เฉพาะกิจกรรมที่ดำเนินการบนผิว 0.00 กม.</td>
+                                    </tr>
+                                </tfoot>
                             </table>
                         </div>
                         <div class="col-md-3">
                             <h4>แผนที่สายทาง</h4>
-                            <div class="panel panel-default">
-                                <div class="panel-body">
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2868.611673571974!2d100.76303488071528!3d13.590266856439843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sth!4v1547534725306"
-                                        width="200" height="" frameborder="0" style="border:0" allowfullscreen></iframe>
-                                </div>
-                            </div>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2868.611673571974!2d100.76303488071528!3d13.590266856439843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sth!4v1547534725306"
+                                width="250" height="500"></iframe>
                         </div>
                     </div>
                 </div>
@@ -165,7 +176,7 @@
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    
+
                                                 </td>
                                             </tr>
                                         </table>
@@ -399,6 +410,53 @@
                         </table>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- insert new row modal -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">เพิ่ม/แก้ไขข้อมูลโครงการ</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        ผู้รับจ้าง จำนวนเงิน
+                        (ล้านบาท) วันแล้วเสร็จ
+                        (ตรวจรับงาน) สิ้นสุดค้ำประกันสัญญา จำนวนวันคงเหลือ ช่วงดำเนินงาน ผู้ควบคุมงาน
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">โครงการที่อยู่ระหว่างค้ำประกันสัญญา</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">เลขที่สัญญา</label>
+                            <div class="col-sm-3">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="col-sm-3 control-label">ความยาว<br />(กม.)</label>
+                            <div class="col-sm-3">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-default">Sign in</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+                ...
             </div>
         </div>
     </div>
