@@ -28,9 +28,9 @@ jobs:
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "api" # Api source code path - optional
-          output_location: "dist/choojaithailand" # Built app content directory - optional
+          app_location: "/" # App source code path (static site at repo root)
+          # api_location: "api" # Uncomment and set if you add an API
+          # output_location: "build" # Uncomment and set if your app has a build output directory
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
@@ -44,3 +44,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ICY_RIVER_0C1879310 }}
           action: "close"
+          app_location: "/" # Provided for schema completeness; not used by the close action
