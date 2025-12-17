@@ -1,470 +1,239 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>One Page Summary Prototype UI</title>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/bootstrap-theme.css" />
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/thecss.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Boonchoo Jitnupong, a lecturer at Kasetsart University Sriracha, specializes in Angular as a front-end developer. Explore his expertise in human-computer interaction and software development methodologies.">
+    <meta name="keywords" content="boonchoo; jitnupong; angular; front-end; developer;">
+    <title>Boonchoo Jitnupong (Ph.D.)</title>
 </head>
 
 <body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
     <div class="container">
-        <div class="page-header">
-            <h1><span class="glyphicon glyphicon-road" aria-hidden="true"></span>&nbsp;
-                สบ.1011 แยกทางหลวงหมายเลข 3 - บ้านบางกะลี อ.เมือง อ.บางพลี จ.สมุทรปราการ<br /><small>ระยะทางตลอดสาย
-                    7.620 กม.</small></h1>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            &#9312; แสดงตำแหน่งช่วงที่อยู่ระหว่างค้ำประกันสัญญา
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <div class="jumbotron">
-                            <p>ส่วนแสดงผลภาพสายทาง</p>
-                        </div>
-                        <table class="table table-bordered">
-                            <tr>
-                                <td class="text-center">IRI</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="text-center">พื้นที่ความเสียหาย</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Boonchoo</span>
+                <span class="last-name">Jitnupong</span>
             </div>
-        </div>
+            <div class="contact-info">
+                <span class="email">Email: </span>
+                <span class="email-val">boonchoo.ji[at]gmail.com</span>
+                <span class="seperator">|</span>
+                <span class="email-val"><a href="https://choojaithailand.blogspot.com" target="_blank">Blog</a></span>
+                <span class="seperator">|</span>
+                <span class="email-val"><a href="https://linkedin.com/in/boonchoo" target="_blank">Linkedin</a></span>
+                <span class="seperator">|</span>
+                <span class="email-val"><a href="https://github.com/jitnupong-b" target="_blank">GitHub</a></span>
+            </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            &#9313; แสดงรายละเอียดช่วงที่อยู่ระหว่างค้ำระกันสัญญา
-                        </div>
-                    </div>
-                    <div class="panel-body">
-                        <div class="col-md-9">
-                            <table class="table table-striped text-sm">
-                                <thead>
-                                    <tr>
-                                        <td>โครงการที่อยู่ระหว่างค้ำประกันสัญญา</td>
-                                        <td>เลขที่สัญญา</td>
-                                        <td>ความยาว<br />(กม.)</td>
-                                        <td>ผู้รับจ้าง</td>
-                                        <td>จำนวนเงิน<br />(ล้านบาท)</td>
-                                        <td colspan="3">วันแล้วเสร็จ<br />(ตรวจรับงาน)</td>
-                                        <td colspan="3">สิ้นสุดค้ำประกันสัญญา</td>
-                                        <td colspan="2">จำนวนวันคงเหลือ</td>
-                                        <td>ช่วงดำเนินงาน</td>
-                                        <td>ผู้ควบคุมงาน</td>
-                                        <td>ลบ</td>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>ไฟฟ้าแสงสว่าง</td>
-                                        <td>11/2560</td>
-                                        <td>1 แท่ง</td>
-                                        <td>บ.พงศกรกลการ จำกัด</td>
-                                        <td>4.122</td>
-                                        <td>31</td>
-                                        <td>มี.ค.</td>
-                                        <td>60</td>
-                                        <td>31</td>
-                                        <td>มี.ค.</td>
-                                        <td>62</td>
-                                        <td>166</td>
-                                        <td>วัน</td>
-                                        <td>3+200-5+300</td>
-                                        <td>นายอุปัชฌาย์ ทวีมนูญ</td>
-                                        <td><button class="btn btn-danger" onclick="confirm_delete();"><span class="glyphicon glyphicon-remove-circle"></span></button></td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="16" class="text-right">
-                                            <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">
-                                                เพิ่มข้อมูลโครงการ
-                                            </button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="16">รวมระยะทางที่อยู่ระหว่างค้ำประกันสัญญา
-                                            (เฉพาะกิจกรรมที่ดำเนินการบนผิว 0.00 กม.</td>
-                                    </tr>
-                                </tfoot>
-                            </table>
-                        </div>
-                        <div class="col-md-3">
-                            <h4>แผนที่สายทาง</h4>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2868.611673571974!2d100.76303488071528!3d13.590266856439843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sth!4v1547534725306"
-                                width="250" height="500"></iframe>
-                        </div>
-                    </div>
-                </div>
+            <div class="about">
+                <p><span class="position">Front-End Developer </span>
+                    <span class="desc">
+                        I am a front-end developer with more than 5 years of experience writing HTML, CSS,
+                        JavaScript and Angular.
+                        I'm motivated, result-focused, and seeking a successful team-oriented company with an
+                        opportunity to
+                        grow.
+                    </span>
+                </p>
+                <br />
+                <p>
+                    <span class="position">Lecturer</span>
+                    <span class="desc">
+                        I am a lecturer in the IT field with expertise in web development. I have a passion for teaching
+                        and helping students learn the latest technologies. I have experience teaching HTML, CSS,
+                        JavaScript, and other web development frameworks. I believe in hands-on learning and providing
+                        real-world examples to enhance the learning experience. I am dedicated to helping students
+                        succeed and preparing them for a career in the IT industry.
+                    </span>
+                </p>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <div class="panel-title">&#9314; ข้อมูลสายทาง</div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Experience</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Lecturer</div>
+                            <div class="addr">Department of Computer Science and Information</div>
+                            <div class="duration">Faculty of Science at Sriracha, Kasetsart University</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Courses</div>
+                            <div class="desc">Principle of OOP; Data Structures; HCI; Web App. with Angular; Android Mobile App. with Kotlin</div>
+                        </div>
                     </div>
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">ชนิดผิวทาง</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <td>ประเภท</td>
-                                                <td>ระยะทาง (กม.)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>ลูกรัง</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <tr>
-                                                <td>ลาดยาง</td>
-                                                <td class="text-right">9.260</td>
-                                            </tr>
-                                            <tr>
-                                                <td>คอนกรีต</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Developers</div>
+                            <div class="addr">True Digital Entertainment</div>
+                            <div class="duration">2015</div>
+                        </div>
+                        <div class="right">
+                            <div class="name">Projects</div>
+                            <div class="desc">Develop Back-end services with C#; Cooperate with Front-end Designer and
+                                Deploy the web appliation for our customers</div>
+                        </div>
+                    </div>
 
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Education</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Ph.D. in Computer Science and Information Systems</div>
+                            <div class="addr">National Institute of Development Administration (NIDA), BKK, Thailand
                             </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">ยุทธศาสตร์สายทาง</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <table class="table table-bordered">
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" checked="checked"> ท่องเที่ยว
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" checked="checked"> จราจรสูง
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" checked="checked"> เศรษฐกิจ
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" checked="checked"> พื้นที่ชายแดน
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" checked="checked"> โลจิสติก
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="checkbox">
-                                                        <label>
-                                                            <input type="checkbox" checked="checked"> อื่นๆ
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">ข้อมูลโครงสร้างการระบายน้ำ</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <td>รายการ</td>
-                                                <td>จำนวน (แท่ง)</td>
-                                                <td>ความยาวรวม (ม.)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>สะพาน</td>
-                                                <td>8</td>
-                                                <td>271</td>
-                                            </tr>
-                                            <tr>
-                                                <td>สะพานแคบ</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>ท่อลอดกลม</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>ท่อลอดเหลี่ยม</td>
-                                                <td></td>
-                                                <td></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                            <div class="duration">Class of 2018</div>
                         </div>
-                        <div class="row">
-                            <div class="col-md-8">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">ข้อมูลสินทรัพย์</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <td>ป้ายจราจร<br />ชุด</td>
-                                                <td>หลัก กม.<br />(หลัก)</td>
-                                                <td>หลัก นำโค้ง<br /></td>
-                                                <td>Guard Rail<br />(ม.)</td>
-                                                <td>Timber Baricadt<br />ม.</td>
-                                                <td>ไฟกระพริบ<br />ชุด</td>
-                                                <td>ไฟฟ้าแสงสว่าง<br />ชุด</td>
-                                            </tr>
-                                            <tr>
-                                                <td>362</td>
-                                                <td>10</td>
-                                                <td></td>
-                                                <td>204</td>
-                                                <td></td>
-                                                <td>93</td>
-                                                <td></td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">ข้อมูลด้านสังคม</h3>
-                                    </div>
-                                    <div class="panel-body">
-                                        <table class="table table-striped">
-                                            <tr>
-                                                <td>รายการ</td>
-                                                <td>จำนวน (แห่ง)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>หน่วยงานราชการ</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>แหล่งชุมชน</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>สถานที่ท่องเที่ยว</td>
-                                                <td>-</td>
-                                            </tr>
-                                            <tr>
-                                                <td>สถานที่ทางศาสนา</td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>โรงงานอุตสาหกรรม</td>
-                                                <td>3</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
+                        <br/><br/>
+                        <div class="right">
+                            <div class="name">Disseration</div>
+                            <div class="desc">The Development of User Interface Design Guideline: Bridge the
+                                Organization Culture Gaps</div>
                         </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Master of Science in Computer Science and Information Systems</div>
+                            <div class="addr">National Institute of Development Administration (NIDA), BKK, Thailand
+                            </div>
+                            <div class="duration">Class of 2015</div>
+                        </div>
+                        <br/><br/>
+                        <div class="right">
+                            <div class="name">Topics</div>
+                            <div class="desc">The Development of Request Systemwith Web Services Technologies</div>
+                        </div>
+                    </div>
+                    <div class="section__list-item">
+                        <div class="left">
+                            <div class="name">Bachelor of Science in Computer Science</div>
+                            <div class="addr">Kasetsart University Sriracha Campus, Chonburi, Thailand
+                            </div>
+                            <div class="duration">Class of 2015</div>
+                        </div>
+                        <br/><br/>
+                        <div class="right">
+                            <div class="name">Senior Projects</div>
+                            <div class="desc">Simulation Mechanic Physics E-Learning System</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">Development Projects</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">Native Java Android</div>
+                        <div class="text">ODPC6: Dengue Manager Application; geolocation application to support the
+                            public health sector to prevent and control the dengue.</div>
+                    </div>
+
+                    <div class="section__list-item">
+                        <div class="name">Angular Web Application</div>
+                        <div class="text">Many projects such as CRUD project with MySQL, Report and Dashboard Application and etc.</div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">&#9315; ข้อมูลสำรวจด้านวิศวกรรม</h3>
+            <div class="section">
+                <div class="section__title">Programming Skills</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Angular
+                            </div>
+                        </div>
+                        <div class="right">
+                            <input id="ck1" type="checkbox" checked />
+                            <label for="ck1"></label>
+                            <input id="ck2" type="checkbox" checked />
+                            <label for="ck2"></label>
+                            <input id="ck3" type="checkbox" checked/>
+                            <label for="ck3"></label>
+                            <input id="ck4" type="checkbox" checked/>
+                            <label for="ck4"></label>
+                            <input id="ck5" type="checkbox" checked/>
+                            <label for="ck5"></label>
+
+                        </div>
                     </div>
-                    <div class="panel-body">
-                        <table class="table table-bordered">
-                            <tr>
-                                <td>PCU</td>
-                                <td>7,428</td>
-                                <td>ตัน/วัน</td>
-                            </tr>
-                            <tr>
-                                <td>IRI เฉลี่ย</td>
-                                <td>-</td>
-                                <td>ม./กม.</td>
-                            </tr>
-                            <tr>
-                                <td>Def. เฉลี่ย</td>
-                                <td>-</td>
-                                <td>มม.</td>
-                            </tr>
-                        </table>
+
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            CSS</div>
+                    </div>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" checked/>
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" checked/>
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
                     </div>
                 </div>
-            </div>
-            <div class="col-md-8">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">&#9316; ผลการดำเนินการปกติ</h3>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                            Java</div>
                     </div>
-                    <div class="panel-body">
-                        <table class="table table-striped">
-                            <tr>
-                                <td>Deep Patch<br />(ตร.ม.)</td>
-                                <td>Sign Patch<br />(ตร.ม.)</td>
-                                <td>ตัดหญ้า<br />(ตร.ม.)</td>
-                                <td>ป้ายจราจร<br />(จุด)</td>
-                                <td>หลัก กม.<br />(หลัก)</td>
-                                <td>หลักนำโค้ง<br />(หลัก)</td>
-                                <td>Guard Rail<br />(ม.)</td>
-                                <td>Timber Baricadt<br />(ม.)</td>
-                                <td>ไฟกระพริบ<br />(ชุด)</td>
-                                <td>ไฟฟ้าแสงสว่าง<br />(ชุด)</td>
-                            </tr>
-                            <tr>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>166,680</td>
-                                <td>262</td>
-                                <td>10</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                            </tr>
-                        </table>
+                    <div class="right">
+                        <input id="ck1" type="checkbox" checked />
+
+                        <label for="ck1"></label>
+                        <input id="ck2" type="checkbox" checked />
+
+                        <label for="ck2"></label>
+                        <input id="ck3" type="checkbox" checked/>
+
+                        <label for="ck3"></label>
+                        <input id="ck4" type="checkbox" checked/>
+                        <label for="ck4"></label>
+                        <input id="ck5" type="checkbox" />
+                        <label for="ck5"></label>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="section__title">
+                    Interests
+                </div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        LFC Supporter; Tech; Gadgets; Music; Sci-fi;
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- insert new row modal -->
-    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">เพิ่ม/แก้ไขข้อมูลโครงการ</h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-inline">
-                        ผู้รับจ้าง จำนวนเงิน
-                        (ล้านบาท) วันแล้วเสร็จ
-                        (ตรวจรับงาน) สิ้นสุดค้ำประกันสัญญา จำนวนวันคงเหลือ ช่วงดำเนินงาน ผู้ควบคุมงาน
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">โครงการที่อยู่ระหว่างค้ำประกันสัญญา</label>
-                            <div class="col-sm-9">
-                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">เลขที่สัญญา</label>
-                            <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="col-sm-3 control-label">ความยาว<br />(กม.)</label>
-                            <div class="col-sm-3">
-                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-default">Sign in</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                ...
-            </div>
-        </div>
     </div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 
 </html>
