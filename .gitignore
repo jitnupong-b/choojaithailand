@@ -1,2 +1,12 @@
 /index.bak.html
 /profile.html
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local editor settings and temporary files
+.vscode/settings.json
+*.swp
+*.swo
+*~
